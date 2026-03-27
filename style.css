@@ -67,3 +67,9 @@ section {
   text-underline-offset: 4px;
   color: rgb(255, 255, 255);
 }
+
+.soliatistockholmbear img   {
+  width: 100%vw;
+  height: auto;
+  display: block;
+}
