@@ -68,8 +68,10 @@ section {
   color: rgb(255, 255, 255);
 }
 
-.soliatistockholmbear img   {
-  width: 100%vw;
+.soliatistockholmbear img {
+  max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
+
