@@ -57,6 +57,11 @@ nav a:hover::after {
   width: 100%;
 }
 
+nav a.active::after {
+  width: 100%;
+}
+
+
 section {
   padding: 120px 20px;
   text-align: center;
