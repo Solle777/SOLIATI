@@ -77,12 +77,31 @@ section {
   color: white;
 }
 
+/* IMAGE WRAPPER */
+.soliatistockholmbear {
+  position: relative;
+  max-width: 100%;
+}
+
 /* IMAGE */
 .soliatistockholmbear img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* FADE ON ALL 4 SIDES */
+.soliatistockholmbear::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,0) 60%,
+    #0a0a0a 100%
+  );
 }
 
 /* ------------------------------- */
@@ -103,12 +122,12 @@ section {
 
   /* Keep menu horizontal but tighter */
   nav {
-    gap: 15px;        /* reduce spacing */
+    gap: 15px;
     transform: translateX(-50%);
   }
 
   nav a {
-    font-size: 15px;  /* smaller text so it fits */
+    font-size: 15px;
     margin: 0;
   }
 
