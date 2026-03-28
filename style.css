@@ -90,35 +90,30 @@ section {
 /* ------------------------------- */
 
 @media (max-width: 600px) {
-  /* Stack header vertically */
+
+  /* Keep header horizontal */
   header {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
+    padding: 10px 20px;
   }
 
-  /* Center logo */
+  /* Slightly smaller logo */
   .logo {
-    font-size: 26px;
-    margin-bottom: 10px;
+    font-size: 24px;
   }
 
-  /* Stack menu vertically */
+  /* Keep menu horizontal but tighter */
   nav {
-    position: static;
-    transform: none;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 5px;
+    gap: 15px;        /* reduce spacing */
+    transform: translateX(-50%);
   }
 
   nav a {
-    font-size: 18px;
-    padding: 6px 0;
+    font-size: 15px;  /* smaller text so it fits */
+    margin: 0;
   }
 
-  /* Extra top padding because header is taller */
+  /* Adjust section padding so content doesn't hide behind header */
   section {
-    padding-top: 160px;
+    padding-top: 140px;
   }
 }
